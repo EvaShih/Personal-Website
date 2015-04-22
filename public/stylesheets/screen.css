@@ -1,0 +1,32 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 11, ../sass/screen.scss */
+nav {
+  float: right;
+  /* Cross-browser floating helper*/
+}
+/* line 13, ../sass/screen.scss */
+nav a {
+  text-decoration: none;
+  color: #BADA55;
+  /* Cross-browser inline-block helper */
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  /* Test-shadow helper + rgba() is a built-in Sass mixin*/
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  /* Cross browser CSS3 transition */
+  -moz-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+/* line 22, ../sass/screen.scss */
+nav a:hover {
+  /* Compass color mixin: shade() */
+  color: #94ae44;
+}
