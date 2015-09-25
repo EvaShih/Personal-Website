@@ -6,16 +6,16 @@
 
 @font-face {
     font-family: 'ProximaNova-Light';
-    src: url('fonts/ProximaNova-Light.otf') format('opentype'),
-        url('fonts/ProximaNova-Light.ttf') format('truetype');
+    src: url('../fonts/ProximaNova-Light.otf') format('opentype'),
+        url('../fonts/ProximaNova-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
     font-family: 'ChaparralPro-Regular';
-    src: url('fonts/ChaparralPro-Regular.otf') format('opentype'),
-        url('fonts/ChaparralPro-Regular.ttf') format('truetype');
+    src: url('../fonts/ChaparralPro-Regular.otf') format('opentype'),
+        url('../fonts/ChaparralPro-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 100;
 }
