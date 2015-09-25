@@ -6,35 +6,29 @@
 
 @font-face {
     font-family: 'ProximaNova-Light';
-    src: url('../fonts/ProximaNova-Light');
+    src: url('fonts/ProximaNova-Light.otf') format('opentype'),
+        url('fonts/ProximaNova-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
     font-family: 'ChaparralPro-Regular';
-    src: url('../fonts/ChaparralPro-Regular');
+    src: url('fonts/ChaparralPro-Regular.otf') format('opentype'),
+        url('fonts/ChaparralPro-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 100;
 }
 
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-body {      
-    height: 100%;
-    margin: 0;
-    /* Background image */
+body {    
     background: url('../images/background.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
+    margin: 0;
+    /* Background image */
 }
 
 .flexcontainer {
