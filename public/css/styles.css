@@ -1,13 +1,41 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 11, ../sass/screen.scss */
+/* General Styling */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;   
+    color: inherit;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
 
 @font-face {
     font-family: 'ProximaNova-Light';
     src: url('../fonts/ProximaNova-Light.otf') format('opentype'),
         url('../fonts/ProximaNova-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/ProximaNova-Bold.otf') format('opentype'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 100;
 }
@@ -20,129 +48,223 @@
     font-weight: 100;
 }
 
-body {    
-    background: url('../images/background.png') no-repeat center center fixed; 
+/* Content Styling */
+
+.content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+}
+
+.nav_bar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+    padding: 15px;
+    padding-left: 25px;
+    background-color: white;
+    display: none;
+    
+}
+
+#nav_logo {
+    margin-right: 25px;
+    height: 45px;   
+    float: left;
+}
+
+.nav_bar ul {
+}
+
+.nav_bar ul li {
+    float: left;
+    font-family: 'ProximaNova-Bold';
+    color: #36454f;
+    letter-spacing: 5px;
+    margin: 10px;
+    display: inline;   
+}
+
+
+.panels {
+    position: relative;
+    height: 100%;
+    min-height: 1200px;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Header Panel */
+
+#fixed {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    background: url("../images/background.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    margin: 0;
-    /* Background image */
-}
-
-.flexcontainer {
-    /*padding-bottom: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
-    margin-bottom: auto;
-    text-align: center;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; */
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flexcenter {
-    max-height: 350px;
-    position: absolute;
+    position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    margin: auto;
+    z-index: -99;
 }
 
-.content {
-    text-align: center; 
+.header {
+    text-align: center;   
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-
-h1 {
-    font-family: 'ProximaNova-Light', sans-serif;
-    color: #666666;
-    font-size: 35px;
-    font-weight: 100;
-    letter-spacing: 9.5px;
-    margin: 0 auto;
-    padding: 10px;
+#header_image {
+    margin-bottom: 30px;   
 }
 
-#navigation ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: 0;
-    text-align: center;
-    margin: 0 auto;
-}
-
-#navigation ul li {
-    font-family: 'ProximaNova-Light', sans-serif;
-    font-size: 15px;
+.nav li {
+    font-family: 'ProximaNova-Bold';
+    color: white;
+    letter-spacing: 5px;
+    margin: 10px;
     display: inline;
+}
+
+/* About Me panel */
+
+#about_panel {
+    margin-top: 100%;
+    background-color: white;
+}
+
+.about_content { 
+    width: 1030px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+	transform: translateY(-50%);
+}
+
+#about_pic {
+    float: left;
+    width: 500px;
+}
+
+.about_description {
+    float: right;
+    width: 500px;
+    padding-right: 10px;
+}
+
+.about_description h1 {
+    font-family: 'ProximaNova-Bold'; 
     letter-spacing: 3px;
+    font-size: 2.5em;
+    color: #36454f;
+    margin-bottom: 10px;
 }
 
-li:first-child:after{
-    font-family: 'ProximaNova-Light', sans-serif;
+.about_description p {
+    font-family: 'ProximaNova-Light';
     color: #666666;
-    content: '  + ';
 }
 
-#navigation ul li a {
-    text-decoration: none;
-    color: #666666;
-    opacity: 0.4;
-    transition: opacity .45s ease-in-out;
-    -moz-transition: opacity .45s ease-in-out;
-    -webkit-transition: opacity .45s ease-in-out;
+
+/* Works Panel */
+
+#works_panel {
+    background-color: #1E1E1E;
 }
 
-#navigation ul li a:hover {
-    opacity: 1;  
-}
-
-#message {
-    padding: 60px;   
-}
-
-#message p {
-    font-family: 'ChaparralPro-Regular', serif;
-    color: #666666;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 20px;
-    letter-spacing: 4px;
+.square_wrapper {
+    height: 100%;
+    position: relative;
     margin: 0 auto;
 }
 
-h2 {
-    font-family: 'ProximaNova-Light', sans-serif;
-    color: #666666;
-    font-size: 19px;
-    font-weight: 100;
-    letter-spacing: 4px;
-    min-width: 400px;
-    margin: 0 auto;
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin: 0;
+    background-color:#1E1E1E;
+    overflow:hidden;
 }
 
-#mediawrapper {
-    max-width: 14em;
-    margin: auto;
+.square_content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    
+}
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+
+.img1 {
+    background-image: url('../images/hackillinois_cover.jpg');
+}
+
+.img2 {
+    background-image: url('../images/banquet_cover.jpg');
+}
+
+.img3 {
+    background-image: url('../images/ultiva_cover');   
+}
+
+.img4 {
+    background-image: url('../images/libtracker_cover');   
+}
+
+
+/* Contact panel Styling */
+
+#contact_panel {
+    background-color: white;
+}
+
+.contact_content {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+	transform: translateY(-50%);   
+    text-align: center;
+}
+
+#contact_panel h1 {
+    font-family: 'ProximaNova-Bold';   
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    color: #36454f;
+    
+}
+
+#contact_panel h2 {
+    margin-top: 10px;
+    font-family: 'ProximaNova-Light';   
+    letter-spacing: 2.5px;
+    color: #666666;
+    font-size: 1em;
+}
+
+#media_wrapper {
+    margin-top: 30px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 15px;
 }
 
 /* Styling Media Icons */
@@ -206,6 +328,10 @@ h2 {
 #github:hover path {
     opacity: 1;
 } 
+
+
+
+
 
 
 

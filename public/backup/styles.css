@@ -1,0 +1,227 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 11, ../sass/screen.scss */
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('../fonts/ProximaNova-Light.otf') format('opentype'),
+        url('../fonts/ProximaNova-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'ChaparralPro-Regular';
+    src: url('../fonts/ChaparralPro-Regular.otf') format('opentype'),
+        url('../fonts/ChaparralPro-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {    
+    background: url('../images/background.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    /* Background image */
+}
+
+.flexcontainer {
+    /*padding-bottom: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    margin-bottom: auto;
+    text-align: center;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexcenter {
+    max-height: 350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.content {
+    text-align: center; 
+}
+
+
+h1 {
+    font-family: 'ProximaNova-Light', sans-serif;
+    color: #666666;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 9.5px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#navigation ul li {
+    font-family: 'ProximaNova-Light', sans-serif;
+    font-size: 15px;
+    display: inline;
+    letter-spacing: 3px;
+}
+
+li:first-child:after{
+    font-family: 'ProximaNova-Light', sans-serif;
+    color: #666666;
+    content: '  + ';
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    color: #666666;
+    opacity: 0.4;
+    transition: opacity .45s ease-in-out;
+    -moz-transition: opacity .45s ease-in-out;
+    -webkit-transition: opacity .45s ease-in-out;
+}
+
+#navigation ul li a:hover {
+    opacity: 1;  
+}
+
+#message {
+    padding: 60px;   
+}
+
+#message p {
+    font-family: 'ChaparralPro-Regular', serif;
+    color: #666666;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'ProximaNova-Light', sans-serif;
+    color: #666666;
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+#mediawrapper {
+    max-width: 14em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Styling Media Icons */
+
+#facebook path {
+    fill: #666666;
+    opacity: 0.3;
+    transition: opacity .45s ease-in-out;
+    -moz-transition: opacity .45s ease-in-out;
+    -webkit-transition: opacity .45s ease-in-out;
+}
+
+#facebook:hover path {
+    opacity: 1;
+}   
+
+#twitter path {
+    fill: #666666;
+    opacity: 0.3;
+    transition: opacity .45s ease-in-out;
+    -moz-transition: opacity .45s ease-in-out;
+    -webkit-transition: opacity .45s ease-in-out;
+}
+
+#twitter:hover path {
+    opacity: 1;
+} 
+
+#instagram path {
+    fill: #666666;
+    opacity: 0.3;
+    transition: opacity .45s ease-in-out;
+    -moz-transition: opacity .45s ease-in-out;
+    -webkit-transition: opacity .45s ease-in-out;
+}
+
+#instagram:hover path {
+    opacity: 1;
+} 
+
+#linkedin path {
+    fill: #666666;
+    opacity: 0.3;
+    transition: opacity .45s ease-in-out;
+    -moz-transition: opacity .45s ease-in-out;
+    -webkit-transition: opacity .45s ease-in-out;
+}
+
+#linkedin:hover path {
+    opacity: 1;
+} 
+
+#github path {
+    fill: #666666;
+    opacity: 0.3;
+    transition: opacity .45s ease-in-out;
+    -moz-transition: opacity .45s ease-in-out;
+    -webkit-transition: opacity .45s ease-in-out;
+}
+
+#github:hover path {
+    opacity: 1;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
